@@ -1,6 +1,6 @@
 language: rust
 sudo: required
-dist: bionic
+dist: trusty
 addons:
     apt:
         packages:
@@ -13,7 +13,6 @@ rust:
 matrix:
 allow_failures:
   - rust: nightly
-fast_finish: true
 script:
   - cargo clean
   - cargo build
